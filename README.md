@@ -2,8 +2,11 @@
 #### OVERVIEW
 In this repository we provide implementations in both Matlab and Python of scAIG. The main branch of the repository, scAIG, contains the code for the method (available in both Matlab and Python) and sc-seq data called Yan. It is important to note that the provided data are solely intended as examples and should not be substituted for the data presented in the relevant publications. The main content of the code is divided into two parts
   1. demo_scAIG_C: The code for clustering cells into different types. For Matlab, the input is a single-cell RNA-seq data matrix, where each column is a cell, and each row is the log10 expression of a gene. Output a structure called out, including
+
      num_cluster: Estimation of cell class numbers.
+     
      idx_cell:  Index of remaining cells after outlier removal.
+     
      idx_cell: Index of remaining gene after gene selection.
      nc: The number of connected branches of the similarity matrix for extimating number of clusterings.
      grp: Cell clustering result.
