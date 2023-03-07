@@ -7,7 +7,7 @@ In this repository we provide implementations in both Matlab and Python of scAIG
      
      idx_cell:  Index of remaining cells after outlier removal.
      
-     idx_cell: Index of remaining gene after gene selection.
+     idx_cell: Index of remaining gene after gene selection.\\
      nc: The number of connected branches of the similarity matrix for extimating number of clusterings.
      grp: Cell clustering result.
      grps: Cell clustering results under different estimated number of classes.
