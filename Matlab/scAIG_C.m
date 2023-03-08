@@ -12,7 +12,6 @@ if isfield(options,'num_gene_min'), num_gene_min = options.num_gene_min;     end
 if isfield(options,'filter_thr'), filter_thr = options.filter_thr;     end
 if isfield(options,'num_knbr'), num_knbr = options.num_knbr;     end
 if isfield(options,'outrate'), outrate = options.outrate;     end
-if isfield(options,'isdropout'), isdropout = options.isdropout;     end
 
 
 %% step 1: initial gene filtering 
@@ -30,7 +29,7 @@ else
 end
 
 %% step 2: gene selection.
-[fea,D_,A_,idg] = GeneSele(fea,num_gene_min,idg,isdropout);
+[fea,D_,A_,idg] = GeneSele(fea,num_gene_min,idg);
 
 
 %% step 3: Outlier Removing.
