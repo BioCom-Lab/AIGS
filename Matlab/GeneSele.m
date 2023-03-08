@@ -1,4 +1,4 @@
-function [fea,D,NMI,index_fea] = GeneSele(fea,ng,idg,isdropout)
+function [fea,D,NMI,index_fea] = GeneSele(fea,ng,idg)
 %Determining which genes to select by self-supervision.
 %Pseudolabeling from clustering.
 
