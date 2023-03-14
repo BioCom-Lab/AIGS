@@ -9,3 +9,6 @@ The latest version of the manuscript related to scAIG is published on Arxiv at..
 When using ScAIG, please cite 
 
 #### RUNNING THE MATLAB IMPLEMENTATION
+We provide the MATLAB code to run scAIG on eight example data sets in demo_scAIG_C.m and demo_scAIG_V.m. We give the mat format of the Yan data set, and the sources of the rest of the data are as follows:
+1.
+2.
