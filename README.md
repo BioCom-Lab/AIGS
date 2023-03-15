@@ -3,6 +3,12 @@
 In this repository we provide implementations in both Matlab and Python of scAIG. The main branch of the repository, scAIG, contains the code for the method (available in both Matlab and Python) and sc-seq data called Yan. It is important to note that the provided data are solely intended as examples and should not be substituted for the data presented in the relevant publications. The main content of the code is divided into two parts
   1. demo_scAIG_C: The code for clustering cells into different types. For Matlab, the input is a single-cell RNA-seq data matrix, where each column is a cell, and each row is the log10 expression of a gene, output a structure called out.
   2. demo_scAIG_V: The code for sc-seq data visulization. For Matlab, the input is a single-cell RNA-seq data matrix, where each column is a cell, and each row is the log10 expression of a gene. Output a cell array called Res_Visual_AIG.
+
+####scAIG
+The recent emergence of single-cell RNA sequencing (sc-RNA seq) technology has made it possible to detect cell types at the molecular level. However, clustering cells based on sc-RNA seq data poses two major challenges. The first challenge is related to the high dimensionality of the data, which makes it difficult to use conventional distance measures like Euclidean and cosine distance to accurately capture the spatial distribution of the data. The second challenge arises from the limitations of the sequencing technology, which can result in missing gene expression readings (dropouts) and outliers. While traditional single-cell analysis frameworks like SEURAT and SC3 are widely used, they may not achieve high clustering accuracy. Deep network clustering approaches have shown significant improvements, but they are often considered black-box models. 
+
+To address these challenges, we introduce scAIG, an interpretable framework for accurate and efficient sc-RNA seq analysis. scAIG employs an intelligent gene selection algorithm that targets genes indicative of cell types, which effectively reduces data dimensionality and mitigates the negative impact of dropouts. Additionally, scAIG utilizes a novel scaled-invariant distance metric that emphasizes the similarity of homogeneous cells while increasing the distance between heterogeneous cells. These features make scAIG a promising framework for the accurate and interpretable clustering of sc-RNA seq data.
+
 #### CITATION
 The latest version of the manuscript related to scAIG is published on Arxiv at...
 
