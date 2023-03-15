@@ -30,5 +30,8 @@ We also provide the PYTHON code to run scAIG on the Yan data set in the demo_scA
 
 Please refer to the directory MATLAB and the file README.txt within for further detail.
 
-####DEBUG
+#### COMPARISON OF THESE TWO IMPLEMENTATION
+Since the program involves a large number of matrix operations, we recommend using Matlab version for faster clustering and visualization.
+
+#### DEBUG
 If you encounter any issues while running our code, please do not hesitate to contact us at 12035009@zju.edu.cn. We will be more than happy to assist you.
