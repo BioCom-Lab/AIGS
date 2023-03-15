@@ -6,7 +6,7 @@ In this repository we provide implementations in both Matlab and Python of scAIG
 #### CITATION
 The latest version of the manuscript related to scAIG is published on Arxiv at...
 
-When using ScAIG, please cite 
+When using ScAIG, please cite...
 
 #### RUNNING THE MATLAB IMPLEMENTATION
 We provide the MATLAB code to run scAIG on eight example data sets in demo_scAIG_C.m and demo_scAIG_V.m. We give the mat format of the Yan data set, and the sources of the rest of the data are as follows:
@@ -18,3 +18,11 @@ We provide the MATLAB code to run scAIG on eight example data sets in demo_scAIG
   6. Xin: Xin, Yurong, et al. "RNA sequencing of single human islet cells reveals type 2 diabetes genes." Cell metabolism 24.4 (2016): 608-615.https://doi.org/10.1016/j.cmet.2016.08.018.
   7. Muraro: Muraro, Mauro J., et al. "A single-cell transcriptome atlas of the human pancreas." Cell systems 3.4 (2016): 385-394. https://doi.org/10.1016/j.cels.2016.09.002.
   8. Lake: Lake, Blue B., et al. "Neuronal subtypes and diversity revealed by single-nucleus RNA sequencing of the human brain." Science 352.6293 (2016): 1586-1590. http://doi.org/10.1126/science.aaf1204.
+
+#### RUNNING THE PYTHON IMPLEMENTATION
+We also provide the PYTHON code to run scAIG on the Yan data set in the demo_scAIG_C.py for clustering and demo_scAIG_V.py for visulization. 
+
+Please refer to the directory MATLAB and the file README.txt within for further detail.
+
+####DEBUG
+If you encounter any issues while running our code, please do not hesitate to contact us at 12035009@zju.edu.cn. We will be more than happy to assist you.
