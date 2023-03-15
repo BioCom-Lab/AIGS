@@ -5,7 +5,6 @@ filter_thr = [log2(3) 3/2];
 num_gene_min = 100;
 num_knbr = 10;
 outrate  = 5;
-isdropout = 0;
 
 % Predicted options
 if isfield(options,'num_gene_min'), num_gene_min = options.num_gene_min;     end
