@@ -29,9 +29,9 @@ In demo_scAIG_C.m, we provide the script for clustering on eight data sets with 
 
 12. A: The similarity matrix generated for clustering.
 
-If you want to modify the model parameters, you can modify them in options, such as the threshold in gene filtering, the default is [log2(3) 3/2], the number of genes selected each time in gene selection, the default is 100, the proportion of abnormal cells, the default is 5 (means 5%).
+If you want to modify the model parameters, you can modify them in options, such as the threshold in gene filtering, the default is [log2(3) 3/2], the number of genes selected each time in gene selection, the default is 100, the proportion of abnormal cells, the default is 5 (means 5%). 
 
-In demo_scAIG_V.m, we provide the script for clustering on eight data sets with the output as the figure of 2D embedding and the mean silhouette coefficient between 2D embedding and golden label of each data set. The other output are saved in a cell array called Res_Visual_AIG as follows:
+In demo_scAIG_V.m, we provide the script for clustering on eight data sets with the output as the figure of 2D embedding, the clustering accuracy called ARI and the mean silhouette coefficient between 2D embedding and golden label of each data set. The other output are saved in a cell array called Res_Visual_AIG as follows:
 
 1. The first is the origin data as each row represents the expression of a gene on a different cell.
 
