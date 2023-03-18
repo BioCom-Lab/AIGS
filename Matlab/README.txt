@@ -40,3 +40,5 @@ In demo_scAIG_V.m, we provide the script for clustering on eight data sets with 
 3. The third is the golden labels after outlier reduction.
 
 4. The last is the mean silhouette coefficient between the 2D embedding and golden labels.
+
+In demo_scAIG_M.m, we find the marker genes through our clustering result with the output as the heatmap of marker genes and clustering result. The other output is a cell array called idx_marker_gene_name, the i-th position refers to the index of the marker gene of i-th class in the original gene, which can be used to find the name of the marker gene according to the data source literature, and further assist biological analysis.
