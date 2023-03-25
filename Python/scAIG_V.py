@@ -72,7 +72,7 @@ def clip(val):
     elif val<-4:
         val = -4
     return val
-def UMAP_each_point(embedding,A,a,b,alpha,loop1=20,loop2=20):
+def optimize_each_point(embedding,A,a,b,alpha,loop1=20,loop2=20):
     n = embedding.shape[0]
     for ii in range(n):
         temp = np.where(A[ii,:]!=0)[0]
@@ -114,12 +114,14 @@ def UMAP_each_point(embedding,A,a,b,alpha,loop1=20,loop2=20):
                     current[d] = current[d]+alpha*grad_d
         embedding[ii,:] = current
     return embedding         
-def optimize_layout_euclidean(embedding,n_epochs,a,b,A,initial_alpha = 1,loop1 = 20,loop2 = 20):
+def optimize_embedding(embedding,n_epochs,a,b,A,initial_alpha = 1,loop1 = 20,loop2 = 20):
     alpha = initial_alpha
     for n in range(n_epochs):
         if n%10==0:
-            print(n)
-        embedding = UMAP_each_point(embedding,A,a,b,alpha,loop1,loop2)
+            print('Iteration=',n)
+        if n==n_epochs-1:
+            print('Embedding Finish')
+        embedding = optimize_each_point(embedding,A,a,b,alpha,loop1,loop2)
         alpha = initial_alpha*(1-n/n_epochs)
     return embedding
 
@@ -147,6 +149,6 @@ def scAIG_V(Y):
     spread = np.max(D_Y)
     
     a,b = find_ab_params(spread, min_dist)
-    Y = optimize_layout_euclidean(Y,n_epochs,a,b,A)
+    Y = optimize_embedding(Y,n_epochs,a,b,A)
     Y = (Y-np.min(Y))/(np.max(Y)-np.min(Y))
     return [Y,grp,idx_cell]
