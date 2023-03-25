@@ -1,5 +1,5 @@
 %% Load data.
-% load('Colors.mat');
+load('Colors.mat');
 seed = 1;
 rng(seed);
 Datasets = {...

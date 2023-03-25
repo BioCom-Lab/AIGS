@@ -37,7 +37,7 @@ cfun = fit(x_fit',y_fit',phi,'StartPoint',[1 1],'Algorithm', 'Levenberg-Marquard
 a = cfun.a; b = cfun.b;
 
 %embedding
-Y = optimize_layout_euclidean(Y,n_epochs,a,b,A);
+Y = optimize_embedding(Y,n_epochs,a,b,A);
 Y = (Y-min(Y))./(max(Y)-min(Y));
 
 
