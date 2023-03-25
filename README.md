@@ -15,7 +15,7 @@ The latest version of the manuscript related to scAIG is published on Arxiv at..
 When using ScAIG, please cite...
 
 #### RUNNING THE MATLAB IMPLEMENTATION
-We provide the MATLAB code to run scAIG on eight example data sets in demo_scAIG_C.m, demo_scAIG_V.m and demo_scAIG_M.m which finds the marker genes through our clustering result. We give the mat format of the Yan data set, and the sources of the rest of the data are as follows:
+We provide the MATLAB code to run scAIG on eight example data sets in demo_scAIG_C.m, demo_scAIG_V.m and demo_scAIG_M.m for clustering cells, embedding the cells into two dimension and selecting the marker genes through our clustering result. We give the mat format of the Yan data set, and the sources of the rest of the data are as follows:
   1. Yan: Yan, L., Yang, M., Guo, H. et al. Single-cell RNA-Seq profiling of human preimplantation embryos and embryonic stem cells. Nat Struct Mol Biol 20, 1131–1139 (2013). https://doi.org/10.1038/nsmb.2660.
   2. Goolam: Goolam M, Scialdone A, Graham S J L, et al. Heterogeneity in Oct4 and Sox2 targets biases cell fate in 4-cell mouse embryos. Cell, 2016, 165(1): 61-74. https://doi.org/10.1016/j.cell.2016.01.047.
   3. Deng: Deng, Qiaolin, et al. "Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343.6167 (2014): 193-196. http://doi.org/10.1126/science.1245316.
