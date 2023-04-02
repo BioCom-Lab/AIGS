@@ -12,7 +12,7 @@ To address these challenges, we introduce scAIG, an interpretable framework for 
 #### CITATION
 The latest version of the manuscript related to scAIG is published on Research Square at https://doi.org/10.21203/rs.3.rs-2738257/v1.
 
-When using ScAIG, please cite https://doi.org/10.21203/rs.3.rs-2738257/v1.
+When using scAIG, please cite https://doi.org/10.21203/rs.3.rs-2738257/v1.
 
 #### RUNNING THE MATLAB IMPLEMENTATION
 We provide the MATLAB code to run scAIG on eight example data sets in demo_scAIG_C.m, demo_scAIG_V.m and demo_scAIG_M.m for clustering cells, embedding the cells into two dimension and selecting the marker genes through our clustering result. We give the mat format of the Yan data set, and the sources of the rest of the data are as follows:
