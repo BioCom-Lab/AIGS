@@ -41,4 +41,4 @@ In demo_AIGS_V.m, we provide the script for clustering on eight data sets with t
 
 4. The last is the mean silhouette coefficient between the 2D embedding and golden labels.
 
-In demo_AIGS_M.m, we find the marker genes through our clustering result with the output as the heatmap of marker genes and clustering result. The other output is a cell array called idx_marker_gene_name, the i-th position refers to the index of the marker gene of i-th class in the original gene, which can be used to find the name of the marker gene according to the data source literature, and further assist biological analysis.
+In demo_AIGS_M.m, we find the marker genes through our clustering result with the output as the heatmap of marker genes and clustering result. The other output is a cell array called idx_marker, the i-th position refers to the index of the marker gene of i-th class in the original gene, and idx_marker_gene is a cell array, contained all of the marker genes found by demo_AIGS_M which can be used to find the name of the marker gene according to the data source literature, and further assist biological analysis.
