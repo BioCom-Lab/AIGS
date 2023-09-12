@@ -1,6 +1,5 @@
 function  [Do,D,m] = Dissm(fea)
 
-
 D = pdist2(fea',fea',"spearman");
 
 Do = OBPD(D, 10);

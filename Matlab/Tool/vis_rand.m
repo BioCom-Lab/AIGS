@@ -8,10 +8,9 @@ end
 
 theta = 0:2*pi/n:2*pi-2*pi/n;
 T = [cos(theta'),sin(theta')]; 
-dist = 0.01*norm(T(1,:)-T(2,:));
+dist = 0.2*norm(T(1,:)-T(2,:));
 for ii = 1:n
     Dist = Q(grp == ii,:) - C(ii,:);  
     weight = (sum(Dist.^2,2)).^0.1; weight = dist*weight/max(weight);
     Qe(grp == ii,:) = T(ii,:) + weight.*randn(sum(grp == ii),2);
 end
-Qe = 2*Qe;
