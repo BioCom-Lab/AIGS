@@ -21,5 +21,5 @@ for id in range(1):
         labels = labels-1
         labels = labels.reshape(grp.shape)
         ARI = ari(labels,grp)
-        print('ARI=%2,4f.\n',ARI)
-        print('Clustering CPU Time = %2,4f.\n',t2-t1)
+        print("ARI= %s\n" %(ARI))
+        print('Clustering CPU Time = %s\n' %(t2-t1))
