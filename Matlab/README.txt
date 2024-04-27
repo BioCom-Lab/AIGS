@@ -42,3 +42,25 @@ In demo_AIGS_V.m, we provide the script for clustering on eight data sets with t
 4. The last is the mean silhouette coefficient between the 2D embedding and golden labels.
 
 In demo_AIGS_M.m, we find the marker genes through our clustering result with the output as the heatmap of marker genes and clustering result. The other output is a cell array called idx_marker, the i-th position refers to the index of the marker gene of i-th class in the original gene, and idx_marker_gene is a cell array, contained all of the marker genes found by demo_AIGS_M which can be used to find the name of the marker gene according to the data source literature, and further assist biological analysis.
+
+In addition, we have provided the .mat formatted datasets of the eight datasets discussed in the paper in the Data folder. Due to GitHub's file size limit, Xin and Lake datasets have been split into several subfiles. The data can be merged using the following two codes.
+
+Lake: 
+load('Lake_fea_1.mat')
+load('Lake_fea_2.mat')
+load('Lake_fea_3.mat')
+load('Lake_fea_4.mat')
+load('Lake_fea_5.mat')
+load('Lake_fea_6.mat')
+load('Lake_gnd.mat')
+fea = [fea1,fea2,fea3,fea4,fea5,fea6];
+
+Xin: 
+load('Xin_fea_1.mat')
+load('Xin_fea_2.mat')
+load('Xin_fea_3.mat')
+load('Xin_fea_4.mat')
+load('Xin_gnd.mat')
+fea_new = [fea1,fea2,fea3,fea4];
+
+We also provide the code for generating all figures in the paper and supplementary material, along with the results obtained from running them on our personal computers. You can obtain figures consistent with the numbering in the paper by running the Plot_Figure_Manuscript.m and Plot_Figure_Supplementary.m files.
