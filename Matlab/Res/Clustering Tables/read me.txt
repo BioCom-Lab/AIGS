@@ -1,0 +1,2 @@
+所用10个指标：ACC，ARI，NMI，F_measure，FM，Gamma1，Gamma2，Jaccard，MAP，Purity
+每个指标包含两个文件：例如ACC.xlsx为8个数据在6个方法下的精度结果，ACC_ORDER.xlsx为8个数据在6个方法下的序。
