@@ -11,9 +11,23 @@ The recent rise of single-cell RNA sequencing (scRNA-seq) has enabled the detect
 To overcome these challenges, we present AIGS (single cell Analyzer with Intelligent Gene selection), an interpretable framework designed for accurate and efficient scRNA-seq analysis. The AIGS pipeline comprises modules for gene selection, dimensionality reduction, clustering, visualization, and marker gene identification. AIGS distinguishes itself from other frameworks by utilizing an intelligent gene selection algorithm that targets genes which indicate cell types, a minority of all genes that provide the most informative data on cell types. This gene selector systematically identifies class-indicating genes based on the normalized mutual information (NMI) between the learned pseudo-labels and quantified genes, effectively reducing data dimensionality and mitigating the negative impact of dropouts. Furthermore, AIGS incorporates a novel scale-invariant distance metric that highlights the similarity among homogeneous cells while differentiating heterogeneous cells. Notably, AIGS emphasizes functional clustering, wherein cells with similar functions or states are grouped together, yielding deeper insights into the underlying biological processes. This combination of features establishes AIGS as a promising framework for the analysis of scRNA-seq data. And furthermore, AIGS's outstanding performance does not rely on unpredictable outcomes from deep learning frameworks, making it applicable to other analytical tasks, including spatial transcriptomics and multimodal single-cell genomics
 
 #### CITATION
-The latest version of the manuscript related to AIGS is published on Research Square at https://doi.org/10.21203/rs.3.rs-2738257/v1.
+The latest version of the manuscript related to AIGS is published on Biorxiv at [https://doi.org/10.21203/rs.3.rs-2738257/v1](https://doi.org/10.1101/2024.09.01.610665).
 
-When using AIGS, please cite https://doi.org/10.21203/rs.3.rs-2738257/v1.
+
+If you use this code, please cite our paper:
+
+@article {Ni2024.09.01.610665,
+	author = {Ni, Tianhao and Zhang, Xinyu and Jin, Kaixiu and Pei, Guanxiong and Xue, Nan and Yan, Guanao and Li, Taihao and Li, Bingjie},
+	title = {Interpretable scRNA-seq Analysis with Intelligent Gene Selection},
+	elocation-id = {2024.09.01.610665},
+	year = {2024},
+	doi = {10.1101/2024.09.01.610665},
+	publisher = {Cold Spring Harbor Laboratory},
+	URL = {https://www.biorxiv.org/content/early/2024/09/03/2024.09.01.610665},
+	journal = {bioRxiv}
+}
+
+
 
 #### RUNNING THE MATLAB IMPLEMENTATION
 We provide the MATLAB code to run AIGS on eight example data sets in demo_AIGS_C.m, demo_AIGS_V.m and demo_AIGS_M.m for clustering cells, embedding the cells into two dimension and selecting the marker genes through our clustering result. We give the mat format of the Yan data set, and the sources of the rest of the data are as follows:
@@ -35,4 +49,4 @@ Please refer to the directory MATLAB and the file README.txt within for further 
 Since the program involves a large number of matrix operations, we recommend using Matlab version for faster clustering and visualization.
 
 #### DEBUG
-If you encounter any issues while running our code, please do not hesitate to contact us at 12035009@zju.edu.cn. We will be more than happy to assist you.
+If you encounter any issues while running our code, please do not hesitate to contact us at thni@zju.edu.cn. We will be more than happy to assist you.
