@@ -16,15 +16,16 @@ The latest version of the manuscript related to AIGS is published on Biorxiv at 
 
 If you use this code, please cite our paper:
 
-@article {Ni2024.09.01.610665,
-	author = {Ni, Tianhao and Zhang, Xinyu and Jin, Kaixiu and Pei, Guanxiong and Xue, Nan and Yan, Guanao and Li, Taihao and Li, Bingjie},
-	title = {Interpretable scRNA-seq Analysis with Intelligent Gene Selection},
-	elocation-id = {2024.09.01.610665},
-	year = {2024},
-	doi = {10.1101/2024.09.01.610665},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2024/09/03/2024.09.01.610665},
-	journal = {bioRxiv}
+@article{Ni2024.09.01.610665,
+  author       = {Ni, Tianhao and Zhang, Xinyu and Jin, Kaixiu and Pei, Guanxiong and 
+                  Xue, Nan and Yan, Guanao and Li, Taihao and Li, Bingjie},
+  title        = {Interpretable scRNA-seq Analysis with Intelligent Gene Selection},
+  elocation-id = {2024.09.01.610665},
+  year         = {2024},
+  doi          = {10.1101/2024.09.01.610665},
+  publisher    = {Cold Spring Harbor Laboratory},
+  url          = {https://www.biorxiv.org/content/early/2024/09/03/2024.09.01.610665},
+  journal      = {bioRxiv}
 }
 
 
